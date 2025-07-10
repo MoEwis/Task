@@ -5,6 +5,7 @@ import ReduxProvider from "@/providers/ReduxProvider";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
+import LanguageSwitcher from "@/components/Language-switcher";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,7 +37,12 @@ export default async function RootLayout({
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
       <body className={`${geistSans.variable}  antialiased`}>
         <ReduxProvider>
-          <NextIntlClientProvider>{children}</NextIntlClientProvider>
+          <NextIntlClientProvider>
+            <div className="flex justify-end p-4">
+              <LanguageSwitcher />
+            </div>
+            {children}
+          </NextIntlClientProvider>
         </ReduxProvider>
       </body>
     </html>

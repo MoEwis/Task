@@ -1,0 +1,30 @@
+{
+  "Login": {
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "password": "Password",
+    "passwordPlaceholder": "••••••••",
+    "login": "Login",
+    "loading": "Logging in..."
+  },
+  "Admin": {
+    "title": "Admin Dashboard",
+    "description": "Welcome to the Admin Panel",
+    "goToProfile": "Go to Profile"
+  },
+  "EmployeePage": {
+    "title": "Employee Page",
+    "goToProfile": "Go To Profile"
+  },
+  "Profile": {
+    "loading": "Loading profile...",
+    "error": "Failed to load profile.",
+    "welcome": "Welcome, {name}",
+    "email": "Email",
+    "type": "User Type"
+  },
+  "LogoutButton": {
+    "logout": "Logout",
+    "loggingOut": "Logging out..."
+  }
+}
